@@ -31,7 +31,7 @@ class Result {
 
         if(s.contains("PM")){
             if(horario[0] == 12){
-                horario[0] = 00;
+                horario[0] = 12;
             }else{
                 horario[0] = horario[0] + 12;
             }
@@ -41,6 +41,7 @@ class Result {
                 ":"+String.format("%02d", horario[1])+
                 ":"+String.format("%02d", horario[2]);
 
+        System.out.println(resultado);
         return resultado;
     }
 
